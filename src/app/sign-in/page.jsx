@@ -116,11 +116,12 @@ const Page = () => {
             </Button>
           </div>
           <div className="flex flex-col">
-            <span className="mt-2">Don't have an account</span>
+            <span className="mt-2">Don&#39;t have an account</span>
             <Link href="/sign-up" className="text-center font-bold mt-3">
               Sign-Up
             </Link>
           </div>
+
         </CardFooter>
       </Card>
     </div>

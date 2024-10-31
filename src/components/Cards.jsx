@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 const Cards = () => {
@@ -7,7 +8,7 @@ const Cards = () => {
           <div className="mt-4 my-3 p-3">
             <div className="card w-92 bg-base-100 shadow-xl hover:scale-105 duration-200 dark:bg-slate-900 dark:text-white dark:border">
               <figure className="image-container">
-                <img src="2.jpg" alt="aryan" className="card-image"/>
+                <Image src="2.jpg" alt="aryan" className="card-image"/>
               </figure>
               <div className="card-body">
                 <h2 className="card-title">

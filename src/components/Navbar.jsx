@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 import getCookies from '../utility/cookies'
+import Image from 'next/image';
 const Navbar = () => {
   const router = useRouter();
   const products = useSelector((state) => state.cart);
@@ -103,7 +104,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img
+                <Image
                   alt="User avatar"
                   src={
                     image || '/user.png'

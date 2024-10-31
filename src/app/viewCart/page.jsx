@@ -5,6 +5,7 @@ import { addProduct, removeProduct, valueUpdate, valueDecrement } from "../../fe
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 const CartPage = () => {
     const dispatch = useDispatch();
@@ -53,7 +54,7 @@ const CartPage = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {products.map((product) => (
                         <div key={product.id} className="bg-gray-600 rounded-xl shadow-md overflow-hidden pt-2 ">
-                            <img src={product.image} alt={product.name} className="w-full h-48 object-contain" />
+                            <Image src={product.image} alt={product.name} className="w-full h-48 object-contain" />
                             <div className="p-4">
                                 <h2 className="text-lg font-semibold">{product.name}</h2>
                                 <p className="text-gray-300">${product.salePrice? product.salePrice :product.price}</p>

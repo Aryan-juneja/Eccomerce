@@ -2,9 +2,9 @@
 import { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
-import { CldUploadWidget } from 'next-cloudinary';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
+import Image from 'next/image';
+
 
 const Page = () => {
   const [name, setName] = useState('');
@@ -116,7 +116,7 @@ const Page = () => {
               <td className="py-2 px-4">{product.onSale ? 'True' : 'False'}</td>
               <td className="py-2 px-4">{product.onSale ? product.salePrice : '-'}</td>
               <td className="py-2 px-4">
-                <img src={product.imageUrl} className="w-20 h-20 object-cover rounded-md" alt={product.name} />
+                <Image src={product.imageUrl} className="w-20 h-20 object-cover rounded-md" alt={product.name} />
               </td>
               <td className="py-2 px-4 flex gap-2 items-center">
                 <button

@@ -5,9 +5,8 @@
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
     } from "../components/ui/carousel"
+import Image from "next/image";
     const HeroSection = () => {
     return (
         <div className="flex flex-col md:flex-col lg:flex-row ">
@@ -25,7 +24,7 @@
                         <div className="p-3">
                             <Card className="shadow-none border-none">
                                 <CardContent className="flex items-center justify-center">
-                                <img src={`${index+3}.jpg`} alt="image" className="h-[300px] md:h-[450px] w-full object-cover p-3 m-0"></img>
+                                <Image src={`${index+3}.jpg`} alt="image" className="h-[300px] md:h-[450px] w-full object-cover p-3 m-0"></Image>
                                 </CardContent>
                             </Card>
                         </div>
@@ -36,8 +35,6 @@
         </Carousel>
     </div>
 </div>
-
-
     )
     }
 

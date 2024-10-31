@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/sign-up/page.jsx", "src/app/(app)/admin/manage-accounts/page.jsx", "src/app/checkout/page.jsx"  ],
+, "src/app/sign-up/page.jsx", "src/app/(app)/admin/manage-accounts/page.jsx", "src/app/checkout/page.jsx", "src/app/api/upload/route.js"  ],
   "exclude": [
     "node_modules"
   ]

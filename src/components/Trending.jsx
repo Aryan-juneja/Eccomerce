@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { addProduct,removeProduct,valueUpdate,valueDecrement} from "../features/cart/cartSlice";
+import Image from "next/image";
 const Trending = () => {
   
   const dispatch = useDispatch();
@@ -71,7 +72,7 @@ const Trending = () => {
               <div key={key} className="p-2">
                 <div className="card bg-base-100 w-full shadow-2xl">
                   <figure className="h-64">
-                    <img
+                    <Image
                       src={product.imageUrl}
                       alt={`${key}`}
                       className="h-full w-full object-contain"
