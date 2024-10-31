@@ -104,12 +104,13 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <Image
-                  alt="User avatar"
-                  src={
-                    image || '/user.png'
-                  }
-                />
+              <Image
+    alt="User avatar"
+    src={image || '/user.png'}
+    width={40} // Set the width according to your design
+    height={40} // Set the height according to your design
+    className="rounded-full" // Ensure the image is styled as a circle
+/>
               </div>
             </div>
             <ul

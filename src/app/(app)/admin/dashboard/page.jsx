@@ -116,7 +116,7 @@ const Page = () => {
               <td className="py-2 px-4">{product.onSale ? 'True' : 'False'}</td>
               <td className="py-2 px-4">{product.onSale ? product.salePrice : '-'}</td>
               <td className="py-2 px-4">
-                <Image src={product.imageUrl} className="w-20 h-20 object-cover rounded-md" alt={product.name} />
+                <Image src={product.imageUrl} className="w-20 h-20 object-cover rounded-md" width={80} height={80} alt={product.name} />
               </td>
               <td className="py-2 px-4 flex gap-2 items-center">
                 <button

@@ -76,6 +76,8 @@ const Trending = () => {
                       src={product.imageUrl}
                       alt={`${key}`}
                       className="h-full w-full object-contain"
+                      width={300} // Specify the width
+                      height={300} // Specify the height
                     />
                   </figure>
                   <div className="card-body">
