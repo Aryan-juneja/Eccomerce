@@ -1,0 +1,10 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+
+  th,td{
+    border-bottom: 1px solid #ececec;
+    padding: 8px;
+    text-align: left;
+  }
