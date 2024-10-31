@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { addProduct,removeProduct,valueUpdate,valueDecrement} from "../../features/cart/cartSlice";
 
-const page = () => {
+const Page = () => {
     const [product, setProducts] = useState([])
 
     const dispatch = useDispatch();
@@ -105,4 +105,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
